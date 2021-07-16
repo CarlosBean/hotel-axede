@@ -15,10 +15,6 @@ const reservationSchema = new Schema({
     roomType: {
         type: Schema.Types.ObjectId,
         ref: 'roomType'
-    },
-    sede: {
-        type: Schema.Types.ObjectId,
-        ref: 'sede'
     }
 });
 

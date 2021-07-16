@@ -11,6 +11,14 @@ const roomTypeSchema = new Schema({
     price: {
         type: Number,
         required: [true, 'price is required']
+    },
+    amount: {
+        type: Number,
+        required: [true, 'amount is required']
+    },
+    sede: {
+        type: Schema.Types.ObjectId,
+        ref: 'sede'
     }
 });
 
