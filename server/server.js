@@ -17,6 +17,9 @@ app.use(
     })
 );
 
+// routes
+app.use(require('./routes'));
+
 mongoose.connect(process.env.DB, {
     useUnifiedTopology: true,
     useNewUrlParser: true,

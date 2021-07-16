@@ -8,10 +8,16 @@ const sedeSchema = new Schema({
         type: String,
         required: [true, 'name is required']
     },
-    max_amount_room: {
+    maxAmountRoom: {
         type: Number,
         required: [true, 'max amount room is required']
-    }
+    },
+    available: {
+        type: Boolean,
+        required: true,
+        default: true
+    },
+
 });
 
 sedeSchema.plugin(mongooseHidden, { hidden: { _id: false } });
